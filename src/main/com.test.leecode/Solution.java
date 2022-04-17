@@ -5,7 +5,7 @@ public class Solution {
         }
         String prefix=strs[0];
         for (int i = 1; i < strs.length; i++) {
-            prefix = calPrefix(strs[0], strs[i]);
+            prefix = calPrefix(prefix, strs[i]);
             if (prefix.length() == 0) {
                 return prefix;
             }
